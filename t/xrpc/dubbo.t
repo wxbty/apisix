@@ -25,7 +25,7 @@ if ($version !~ m/\/apisix-nginx-module/) {
     plan('no_plan');
 }
 log_level("warn");
-$ENV{TEST_NGINX_DUBBO_PORT} ||= 20880;
+$ENV{TEST_NGINX_DUBBO_PORT} ||= 1985;
 
 add_block_preprocessor(sub {
     my ($block) = @_;
